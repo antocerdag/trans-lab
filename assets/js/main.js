@@ -23,7 +23,7 @@ $(document).ready(function() {
 
 /* Set the width of the side navigation to 250px */
 	function openNav() {
-	    document.getElementById("mySidenav").style.width = "250px";
+	    document.getElementById("mySidenav").style.width = "312px";
 	}
 
 	/* Set the width of the side navigation to 0 */

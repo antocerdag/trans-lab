@@ -86,12 +86,12 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 
 /* The navigation menu links */
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+	padding: 8px 8px 8px 50px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #818181;
     display: block;
-    transition: 0.3s
+    transition: 0.3s;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -132,11 +132,50 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 }
 
 .hamburguesa{
-	margin-top: 22px;
+	margin-top: 16px;
 	color: white;
 }
 .caja-nav h4{
 	color: white;
     font-size: 22px;
     margin-left: 26%;
+}
+
+.sidenav{
+	background-color: whitesmoke;
+	color:#ffbf00;
+
+}
+
+
+.fa-usd.icono1{
+	font-size: 25px;
+    margin-left: 6%;
+    position: absolute;
+    top: 71px;
+}
+.fa-th-large.icono2{
+	margin-left: 6%;
+    font-size: 17px;
+    position: absolute;
+    top: 118px;
+}
+
+.fa-user.icono3{
+    margin-left: 5%;
+    font-size: 26px;
+    position: absolute;
+    top: 160px;
+}
+.material-icons.icono4{
+	margin-left: 4%;
+    position: absolute;
+    top: 207px;
+
+}
+.fa-arrow-right.icono5{
+	margin-left: 5%;
+    font-size: 24px;
+    position: absolute;
+    top: 253px;
 }
