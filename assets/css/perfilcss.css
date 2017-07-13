@@ -4,7 +4,15 @@
 	background-color: #F6A800;
 	margin-top: -20px;
 }
-
+.user{
+	background-image: url(../img/default-user.png);
+    width: 50%;
+    height: 180px;
+    background-size: cover;
+    border-radius: 60%;
+    margin-left: 23%;
+    margin-top: 32px;
+}
 .tarjetas{
 	background-color: #B3B3B3;
 	height: 400px;
@@ -32,10 +40,37 @@
 }
 
 /* PREGUNTAS */
-
+body{
+	background-color: #B3B3B3;
+}
+.desplegables{
+	background-color: #B3B3B3;
+    height: 100%;
+}
+.caja-desplegables{
+	margin-top: 60px;
+}
 .preguntas{
 	width: 100%;
 	height: 250px;
 	background-color: #F6A800;
 	margin-top: -20px;
+}
+
+.texto1{
+	margin-top: 71px;
+	color: white;
+}
+
+.texto2{
+	color: white;
+}
+
+.titulopregunta{
+	color:#F6A800;
+	font-size: 18px;
+}
+
+.collapsible-body{
+	background-color: white;
 }

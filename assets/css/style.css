@@ -154,7 +154,7 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
     position: absolute;
     top: 71px;
 }
-.fa-th-large.icono2{
+.fa-th.icono2{
 	margin-left: 6%;
     font-size: 17px;
     position: absolute;
