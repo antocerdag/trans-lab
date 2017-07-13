@@ -18,6 +18,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
   <!-- Hoja de estilos -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/saldo.css">
 </head>
 <body>
 	<div id="mySidenav" class="sidenav">
@@ -29,7 +30,7 @@
 	  <i class="fa fa-user icono3" aria-hidden="true"></i>
 	  <a class="text-uppercase" href="perfil.html">Perfil</a>
 	   <i class="material-icons icono4">receipt</i>
-	  <a class="text-uppercase" href="preguntas.html">Preguntas Frecuentes</a>
+	  <a class="text-uppercase" href="#">Preguntas Frecuentes</a>
 	  <i class="fa fa-arrow-right icono5" aria-hidden="true"></i>
 	  <a class="text-uppercase" href="home.html">Home</a>
 	</div>
@@ -47,18 +48,25 @@
 			</div>
 		</div>
 	</section>
-	<section class="second-section">
+	<section class="calcu-saldo">
 		<div class="container">
 			<div class="row">
-				<div class="col s12 center-block">
-					<a href="saldo.html" class="waves-effect waves-light btn boton-ver text-uppercase">Ver Saldo</a>
-					<a href="calcular.html" class="waves-effect waves-light btn boton-calcular text-uppercase">Calcular Tarifa</a>
-					<a href="perfil.html" class="waves-effect waves-light btn boton-perfil text-uppercase">Perfil</a>
-					<a href="preguntas.html" class="waves-effect waves-light btn boton-preguntas text-uppercase">Preguntas Frecuentes</a>
+				<div class="inputsaldo center-block center-align">
+					<input type="text" id="numerotarjeta" class="inputsaldo" placeholder="Número Tarjeta">
+				</div>
+					<div class="input-field col s12">
+					    <select>
+					      <option value="" selected>Choose your option</option>
+					      <option value="1">Option 1</option>
+					    </select>
+					    
+					</div>
+					<a href="#" class="waves-effect waves-light btn ver-saldo text-uppercase">Agregar tarjeta</a>
 				</div>
 			</div>
 		</div>
 	</section>
+
 </div>
 	
 	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>

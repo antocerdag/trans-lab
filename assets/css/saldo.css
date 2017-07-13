@@ -1,0 +1,19 @@
+body{
+	background-color: #d6d4d4;
+}
+
+.inputsaldo{
+	width: 90%;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #E6E6E6;
+}
+
+.ver-saldo{
+	background-color: #F6A800;
+	width: 90%;
+	margin-left: 5%;
+    margin-top: 55px;
+    z-index: 0;
+}
