@@ -18,13 +18,13 @@
 }
 
 .logo h2{
-	color: #ffbf00;
+	color: #F6A800;
     font-weight: bold;
     font-size: 29px;
 }
 .boton-iniciar{
 	width: 100%;
-    background-color: #ffbf00;
+    background-color: #F6A800;
 }
 
 .input-field{
@@ -42,7 +42,7 @@
    }
    /* icon prefix focus color */
    .input-field .prefix.active {
-     color: #ffbf00;
+     color: #F6A800;
    }
 
 input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
@@ -50,7 +50,7 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
     box-shadow: none;
 }
 .btn:hover, .btn-large:hover{
-	background-color: #ffbf00;
+	background-color: #F6A800;
 }
 
 .olvidaste{
@@ -66,7 +66,7 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 	font-weight: 100;
 }
 .txt-bajada a{
-	color:#ffbf00;
+	color:#F6A800;
 	font-weight: 600;
 }
 /* SIDEBAR */
@@ -143,7 +143,7 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 
 .sidenav{
 	background-color: whitesmoke;
-	color:#ffbf00;
+	color:#F6A800;
 
 }
 
@@ -178,4 +178,45 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
     font-size: 24px;
     position: absolute;
     top: 253px;
+}
+
+/* SECOND SECTION */
+
+.second-section{
+	width: 100%;
+    background-color: gray;
+    height: 555px;
+    margin-top: -20px;
+}
+
+.boton-ver{
+	background-color: #F6A800;
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 140px;
+    z-index: 0;
+}
+
+.boton-calcular{
+	background-color: #F6A800;
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 15px;
+    z-index: 0;
+
+}
+.boton-perfil{
+	background-color: #F6A800;
+	width: 90%;
+	margin-left: 5%;
+    margin-top: 15px;
+       z-index: 0;
+}
+
+.boton-preguntas{
+	background-color: #F6A800;
+	width: 90%;
+	margin-left: 5%;
+    margin-top: 15px;
+       z-index: 0;
 }
