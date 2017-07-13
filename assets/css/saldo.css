@@ -17,3 +17,13 @@ body{
     margin-top: 55px;
     z-index: 0;
 }
+
+/* CALCULAR SALDO */ 
+
+.caja-select{
+    width: 120%;
+}
+
+.caja-select.inputfield.selectcaja{
+	margin-left: 1%;
+}
