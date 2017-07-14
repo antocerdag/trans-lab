@@ -2,7 +2,7 @@ $(document).ready(function() {
 	$(".boton-iniciar").click(function(event) {
 		event.preventDefault();
 
-		localStorage.email = $("#email").val();
+		localStorage.setItem("email", $("#email").val());
 
 		var password = $("#password").val();
 		if(!(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(localStorage.email))){
@@ -13,9 +13,11 @@ $(document).ready(function() {
 			window.location.href = "home.html";
 		}
 		
-		$(".email-local").append(localstorage.email);
+		//$(".email-local").append(localstorage.email);
 
 	});
+
+	document.getElementsByClassName("email-local").innerHTML = localStorage.getItem("email");
 	// FUNCION PARA IMPRIMIR NUMEROS DE TARJETAS
 	$(".agregar-tarjeta").click(function(event) {
 		localStorage.numerotarjeta = $("#numerotarjeta").val();
