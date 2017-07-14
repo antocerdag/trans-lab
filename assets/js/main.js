@@ -4,8 +4,6 @@ $(document).ready(function() {
 
 		localStorage.email = $("#email").val();
 
-		
-		var email = $("#email").val();
 		var password = $("#password").val();
 		if(!(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(localStorage.email))){
 			alert("Por favor ingresa un correo electrónico válido");
@@ -58,6 +56,11 @@ $(document).ready(function() {
 	
 	});
 
+// CALCULAR SALDO
+	$(".calcu-saldo").click(function(event) {
+		$(".cajas").append("<div class='col s10 center-align center-block caja1'><div class='cabecera'><h2>Costo Pasaje</h2></div> <div class='bodycaja'><h6>Costo</h6></div></div>");
+		$(".cajas").append("<div class='col s10 center-align center-block caja2'><div class='cabecera'><h2>Saldo Final</h2></div><div class='bodycaja'><h5>Saldo</h5></div></div>");
+	});
 
 	$('.collapsible').collapsible();
 	 $('select').material_select();

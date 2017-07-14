@@ -10,6 +10,7 @@ body{
   color: #E6E6E6;
 }
 
+
 .ver-saldo{
 	background-color: #F6A800;
 	width: 90%;
@@ -17,13 +18,49 @@ body{
     margin-top: 55px;
     z-index: 0;
 }
+/* CALCULAR SALDO */
 
-/* CALCULAR SALDO */ 
-
+.calcu-saldo{
+	background-color: #F6A800;
+	width: 90%;
+	margin-left: 5%;
+    margin-top: 55px;
+    z-index: 0;
+}
 .caja-select{
     width: 120%;
 }
 
 .input-field.selectcaja2{
 	margin-left: 1%;
+}
+
+
+.cabecera{
+	background-color: #3E3F41;
+    width: 121%;
+    height: 67px;
+    color: white;
+}
+
+.bodycaja{
+	background-color: #F6A800;
+    height: 120px;
+    width: 121%;
+	margin-top: -7px;
+
+}
+
+.bodycaja h6{
+    position: absolute;
+    top: 399px;
+    margin-left: 32%;
+    font-size: 31px;
+}
+
+.bodycaja h5{
+    position: absolute;
+	top: 602px;
+    margin-left: 32%;
+    font-size: 31px;
 }
