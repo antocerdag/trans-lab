@@ -45,8 +45,7 @@ $(document).ready(function() {
 	        	})
 	        .done(function(response){
 	            console.log(response.saldoTarjeta);
-	            $('#modalresultado').modal('show');
-	            $("#datos-tarjeta").append("<b>Saldo tarjeta bip: </b>"+response.saldoTarjeta+"<br><b>Fecha saldo: </b>"+response.fechaSaldo+"<br><b>ID Tarjeta: </b>"+response.id+"<br><b>Estado contrato: </b>"+response.estadoContrato+"<br>");
+	            $(".cajas-saldo").append("<b>Saldo tarjeta bip: </b>"+response.saldoTarjeta+"<br><b>Fecha saldo: </b>"+response.fechaSaldo+"<br><b>ID Tarjeta: </b>"+response.id+"<br><b>Estado contrato: </b>"+response.estadoContrato+"<br>");
 	        })
 		    .fail(function(){
 		        console.log("error");
@@ -57,7 +56,7 @@ $(document).ready(function() {
 	});
 
 // CALCULAR SALDO
-	$(".calcu-saldo").click(function(event) {
+	$(".calcu-saldoboton").click(function(event) {
 		$(".cajas").append("<div class='col s10 center-align center-block caja1'><div class='cabecera'><h2>Costo Pasaje</h2></div> <div class='bodycaja'><h6>Costo</h6></div></div>");
 		$(".cajas").append("<div class='col s10 center-align center-block caja2'><div class='cabecera'><h2>Saldo Final</h2></div><div class='bodycaja'><h5>Saldo</h5></div></div>");
 	});
