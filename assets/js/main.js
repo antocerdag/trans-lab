@@ -38,21 +38,23 @@ $(document).ready(function() {
 	//ver saldo
 	$(".ver-saldo").click(function(event) {
 		var id = $(".inputsaldo").val();
-		$.ajax({
-			url: 'http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip='+id,
-			type: 'GET',
-			dataType: 'json',
-		})
-		.done(function(response) {
-			console.log("success");
-			console.log(response);
-		})
-		.fail(function() {
-			console.log("error");
-		})
-		.always(function() {
-			console.log("complete");
-		});
+		var value = $(".numeroguardado").val();
+		if(id == ""){
+			alert("Ingresa un numero de tarjeta válido");
+		} else{
+
+		 $.ajax({
+            url : 'api/v1/solicitudes.json',
+            type : 'GET',
+            dataType: 'json',
+            data : {'bip' : numTarjeta},
+            beforeSend: function(){
+                $('#modalresultado').modal('show');
+            },
+        success : function(data){
+        	$(".datos-tarjeta").append('<b>Saldo tarjeta bip: </b>'+data.saldoTarjeta+'<br>'+'<b>Fecha saldo: </b>'+data.fechaSaldo+'<br>'+'<b>ID Tarjeta: </b>'+data.id+'<br>'+'<b>Estado contrato: </b>'+data.estadoContrato+'<br>');
+        }
+		
 	});
 	
 	
